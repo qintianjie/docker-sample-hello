@@ -6,7 +6,6 @@
 	<groupId>com.colorcc.cloud</groupId>
 	<artifactId>docker-sample</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
->>>>>>> branch 'master' of https://github.com/qintianjie/docker-sample-hello.git
 	<packaging>jar</packaging>
 
 	<name>docker-sample</name>
