@@ -1,0 +1,37 @@
+FROM centos:7
+MAINTAINER Jack Qin <tianjieqin@126.com>
+
+# init user dir
+RUN rm -rf /opt/env  && mkdir /opt/env 
+
+# install base software
+RUN yum -y install which.x86_64 \
+    && yum -y install openssh.x86_64 \
+    && yum -y install git \
+    && yum -y install openssh-clients.x86_64 \
+    && yum -y install wget  
+
+
+# install java
+WORKDIR /opt/env
+RUN wget --no-cookies --no-check-certificate \
+    --header "Cookie:gpw_e24=http%3a%2f%2fwww.oracle.com%2ftechnetwork%2fjava%2fjavase%2fdownloads%2fjdk7-downloads-1880260.html;oraclelicense=accept-securebackup-cookie" \
+    http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jdk-8u112-linux-x64.tar.gz \
+    && tar -zxvf jdk-8u112-linux-x64.tar.gz \
+    && rm -rf jdk-8u112-linux-x64.tar.gz 
+
+ENV JAVA_HOME /opt/env/jdk1.8.0_112
+ENV JRE_HOME  $JAVA_HOME/jre
+ENV PATH      $JAVA_HOME/bin:$PATH
+RUN java -version
+
+# install maven
+RUN wget http://apache.communilink.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz \
+    && tar -zxvf  apache-maven-3.3.9-bin.tar.gz \
+    && rm -rf apache-maven-3.3.9-bin.tar.gz
+
+ENV M3_HOME /opt/env/apache-maven-3.3.9
+ENV PATH    $PATH:$M3_HOME/bin
+RUN mvn -v
+
+RUN echo done
