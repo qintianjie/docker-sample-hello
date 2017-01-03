@@ -14,7 +14,7 @@ curl http://localhost:8082/hello/say?name=Jack
 ##Sample  
 ---
 ```
-`root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git`
+<b>root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git</b>
 Cloning into 'docker-sample-hello'...
 remote: Counting objects: 73, done.
 remote: Compressing objects: 100% (54/54), done.
