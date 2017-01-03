@@ -8,6 +8,10 @@ WORKDIR $servicePath
 
 # make sure docker-sample.jar and Dockerfile in the same directory, else use relative path
 ADD docker-sample.jar docker-sample.jar
+ADD run.sh run.sh
+
+RUN chmod a+x run.sh \
+    && ls -l
 
 ## Build java application
 #RUN git clone -b 1.0.2 https://github.com/qintianjie/docker-sample-hello.git \
@@ -19,6 +23,6 @@ ADD docker-sample.jar docker-sample.jar
 #    && mv  target/docker-sample.jar $servicePath
 
 EXPOSE 8080 8081
-#ENTRYPOINT ["/bin/sh"]
-ENTRYPOINT ["java", "-Dserver.port=8081", "-jar", "docker-sample.jar"]
+#ENTRYPOINT ["java", "-Dserver.port=8081", "-jar", "docker-sample.jar"]
+ENTRYPOINT ["/bin/sh", "run.sh"]
 RUN echo done
