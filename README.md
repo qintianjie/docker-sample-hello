@@ -2,17 +2,17 @@
 
 https://hub.docker.com/u/qintianjie/
 
-#### Command
+### Command
 docker pull qintianjie/centos7java8  
 docker build -t qintianjie/docker-sample-web:v0 .  
 docker run -d -p 8082:8081 qintianjie/docker-sample-web:v0   
 docker ps -la   
 docker logs XXX  
 
-#### Verify:  
+### Verify:  
 curl http://localhost:8082/hello/say?name=Jack  
 
-#### Others:
+### Others:
 docker push qintianjie/docker-sample-web:v0  
 docker rmi image_id   
 docker rm  container_id  
