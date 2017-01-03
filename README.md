@@ -13,10 +13,10 @@ docker logs XXX
 curl http://localhost:8082/hello/say?name=Jack  
 
 #### Others:
-docker push qintianjie/docker-sample-web:v0
-docker rmi image_id
-docker rm  container_id
-docker stop xxx
+docker push qintianjie/docker-sample-web:v0  
+docker rmi image_id   
+docker rm  container_id  
+docker stop xxx  
 
 
 
