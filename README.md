@@ -1,6 +1,6 @@
 # Docker HUB:
----
-    [DockerHub](https://hub.docker.com/u/qintianjie/) 
+
+https://hub.docker.com/u/qintianjie/
 
 #### Command
 docker pull qintianjie/centos7java8  
@@ -21,9 +21,9 @@ docker stop xxx
 
 
 #Sample  
----
+
 ```
-root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git #Bash
+root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git
 Cloning into 'docker-sample-hello'...
 remote: Counting objects: 73, done.
 remote: Compressing objects: 100% (54/54), done.
