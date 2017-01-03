@@ -15,6 +15,6 @@ public class HelloController {
 			name = "world";
 		}
 
-		return "Hello " + name;
+		return "Hello [ auto ]" + name;
 	}
 }
