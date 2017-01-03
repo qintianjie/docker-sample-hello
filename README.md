@@ -14,7 +14,7 @@ curl http://localhost:8082/hello/say?name=Jack
 ##Sample  
 ---
 ```
-root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git
+`root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git`
 Cloning into 'docker-sample-hello'...
 remote: Counting objects: 73, done.
 remote: Compressing objects: 100% (54/54), done.
@@ -148,5 +148,3 @@ c0f305b6695b: Mounted from qintianjie/centos7java8
 34e7b85d83e4: Mounted from qintianjie/centos7java8 
 v0: digest: sha256:82b1d95e6e7a307c25ce743426d1d4ffe3aa56cf8c33b2b9cb80e28ee4d89579 size: 2826
 ```
-
-
