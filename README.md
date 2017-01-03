@@ -12,6 +12,7 @@ Verify:
 curl http://localhost:8082/hello/say?name=Jack  
 
 ===Sample===================================================
+```
 root@jackqin /opt/dev/docker/myweb $git clone https://github.com/qintianjie/docker-sample-hello.git
 Cloning into 'docker-sample-hello'...
 remote: Counting objects: 73, done.
@@ -128,8 +129,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b15, mixed mode)
 2017-01-03 03:48:44.884  INFO 22 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-01-03 03:48:44.895  INFO 22 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
 root@jackqin /opt/dev/docker/myweb/docker-sample-hello $
-
-
+```
+```
 root@jackqin /opt/dev/docker/myweb $docker push qintianjie/docker-sample-web:v0 
 The push refers to a repository [docker.io/qintianjie/docker-sample-web]
 a61a04c1f08a: Pushed 
@@ -145,6 +146,6 @@ c0f305b6695b: Mounted from qintianjie/centos7java8
 64dce6972cb3: Mounted from qintianjie/centos7java8 
 34e7b85d83e4: Mounted from qintianjie/centos7java8 
 v0: digest: sha256:82b1d95e6e7a307c25ce743426d1d4ffe3aa56cf8c33b2b9cb80e28ee4d89579 size: 2826
-
+```
 
 
