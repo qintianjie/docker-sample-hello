@@ -1,3 +1,10 @@
+# USE
+A springboot sample for web API:  
+
+http://localhost:8080/hello/say  
+http://localhost:8080/hello/say?name=Jack  
+
+---
 # Docker HUB:
 
 https://hub.docker.com/u/qintianjie/
