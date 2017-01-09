@@ -12,7 +12,8 @@ https://hub.docker.com/u/qintianjie/
 ### Command
 docker pull qintianjie/centos7java8  
 docker build -t qintianjie/docker-sample-web:v0 .  
-docker run -d -p 8082:8081 qintianjie/docker-sample-web:v0   
+docker run -d -p 8082:8081 qintianjie/docker-sample-web:v0      
+    -- or docker run -d -P --names=hello_001 qintianjie/docker-sample-web:v0  8080   
 docker ps -la   
 docker logs XXX  
 

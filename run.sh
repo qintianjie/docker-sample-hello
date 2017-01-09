@@ -1,6 +1,9 @@
 #!/bin/sh
-#nohup java -jar -Dserver.port=8081 /opt/service/docker-sample.jar &
+port=${1:-8081}
+service_name=${2:-docker-sample.jar}
+path=${3:-/opt/service}
+
 java -version
 echo `pwd`
 echo "automatic build for docker"
-java -jar -Dserver.port=8081 docker-sample.jar
+nohup java -jar -Dserver.port=${port} ${path}/${service_name} 

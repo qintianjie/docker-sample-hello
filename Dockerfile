@@ -22,7 +22,9 @@ RUN chmod a+x run.sh \
 #    && mvn clean package -Dmaven.test.skip \
 #    && mv  target/docker-sample.jar $servicePath
 
-EXPOSE 8080 8081
 #ENTRYPOINT ["java", "-Dserver.port=8081", "-jar", "docker-sample.jar"]
-ENTRYPOINT ["/bin/sh", "run.sh"]
 RUN echo done
+
+ENTRYPOINT ["/bin/sh", "run.sh"]
+EXPOSE 8080 8081
+CMD ["8081"]
